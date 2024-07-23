@@ -41,3 +41,34 @@ console.log('B =', newArr1);
 
 console.log(newArr1.splice(1,3));
 console.log('B =', newArr1);    // splice changes the orginal array
+
+
+// concat and spread
+
+// concat method:
+
+const marvel_hero = ['thor', 'ironman', 'spiderman']
+const dc_hero = ['flash', 'superman', 'batman']
+
+all_hero = marvel_hero.concat(dc_hero)
+console.log(all_hero);
+
+
+
+// spread operator:
+
+// const marvel_hero = ['thor', 'ironman', 'spiderman']
+// const dc_hero = ['flash', 'superman', 'batman']
+
+// const all_hero = [...marvel_hero, ...dc_hero]
+// console.log(all_hero);
+
+
+
+//flat method
+let arr = [1,2,3,4,[3,4,5],4,5,6,[6,7,[8,9]]] 
+
+let real_arr = arr.flat(Infinity)
+console.log(real_arr);
+
+// isArray, of, from 
