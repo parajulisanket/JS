@@ -19,7 +19,7 @@ const myDetail = {
 // console.log(myDetail["sisterName"].toLocaleUpperCase());
 
 
-// chnaging details
+// changing details
 
 myDetail.name = 'Michal'
 myDetail.email = 'sanket@gmail.com'
@@ -32,16 +32,58 @@ myDetail.age = 20
 // console.log(myDetail);
 
 
-
-
-
-myDetail.greeting = function(){
-    console.log('hello JS user');
+// 
+const detail = {
+    fullName : {
+        firstName : "sanket",
+        lastName : "parajuli"  
+    },
+    age : "20"
 }
 
-myDetail.greetingUser = function(){
-    console.log(`hello ${this.fullName}`);
-}
+// console.log(detail);
+// console.log(detail.fullName.firstName);
+// console.log(detail.fullName.lastName);
+// console.log(detail.age);
 
-console.log(myDetail.greeting());
-console.log(myDetail.greetingUser());
+
+
+// merging two or more object 
+
+const obj1 = { a : 1, b : 2}
+const obj2 = { c : 3, d : 4}
+const obj3 = { e : 5, f : 6}
+
+const allObj = {...obj1, ...obj2, ...obj3}
+console.log(allObj);
+console.log(Object.keys(allObj));
+console.log(Object.values(allObj));
+console.log(allObj.hasOwnProperty('d')); // to check wheather the value is present or not 
+
+
+
+
+
+
+
+
+
+// functions things 
+
+// myDetail.greeting = function(){
+//     console.log('hello JS user');
+// }
+
+// myDetail.greetingUser = function(){
+//     console.log(`hello ${this.fullName}`);
+// }
+
+// console.log(myDetail.greeting());
+// console.log(myDetail.greetingUser());
+
+
+// const newObj = function(){
+//     console.log(`this is a new function.`);
+// }
+
+// console.log(newObj());
