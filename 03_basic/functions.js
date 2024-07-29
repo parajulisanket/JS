@@ -47,4 +47,50 @@ function logInUserMessage(username){
 }
 
 // console.log(logInUserMessage('sanket'))
-console.log(logInUserMessage()) // it gives user uundefined
+// console.log(logInUserMessage()) // it gives user uundefined
+
+
+// Function with object and array
+
+// rest operator
+
+function addCart(...num1){
+  return num1
+}
+
+// console.log(addCart(100,200,300,400))
+
+
+function addCart2(num2,num3,...num1){
+  return num1
+}
+
+// console.log(addCart2(100,200,300,400))
+
+
+// function with object
+
+const user = {
+  name : "sanket",
+  age : "19"
+} 
+
+// console.log(user.name)
+// console.log(user.age)
+
+function handleObject(){
+  console.log(`Username is ${user.name} and age is ${user.age}.`)
+}
+
+handleObject(user)
+
+
+// function with array
+
+const myArr = ['sanket Parajuli', 20]
+
+function handleObject1(newArr){
+  return newArr[0]
+}
+
+console.log(handleObject1(myArr));
